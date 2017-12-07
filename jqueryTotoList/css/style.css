@@ -34,24 +34,55 @@
 	display: block;
 	clear: both;
 }
-#task-list .list>h3::before{
+#task-list .list>h3::before,#tasking .list>h3::before,#tasked .list>h3::before{
 	content: "*";
 	padding: 0 15px;
 }
-#task-list .list{
+#task-list .list,#tasked .list,#tasked .list{
 	width: 100%;
 	height: 60px;
 	padding: 5px 0;
 	background-color: #bbb;
 	margin-bottom: 10px;
 }
-#task-list .list:last-child{
+#task-list .list:last-child,#tasked .list:last-child,#tasking .list:last-child{
 	margin-bottom: 0;
 }
-#task-list .list h3{
+#task-list .list h3,#tasked .list h3,#tasking .list h3{
 	font-weight: normal;
 	font-size: 18px;
 }
 #task-list .list time,#task-list .list span{
 	padding-left: 40px;
+}
+#tasked .list time,#tasked .list span{
+	padding-left: 40px;
+}
+#tasking .list time,#tasking .list span{
+	padding-left: 40px;
+}
+input{
+	width: 70%;
+	font-size: 14px;
+	padding:10px 5px;
+	margin-bottom: 10px;
+}
+textarea{
+	width: 70%;
+	font-size: 14px;
+	padding: 10px 5px;
+	resize: none;
+	vertical-align: middle;
+	margin-bottom: 10px;
+}
+.btn{
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 15px;
+	border: none;
+	border-radius: 5px;
+}
+#addTask{
+	text-align: center;
 }
